@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ProyectoICP_backend": {
+      "main": "src/ProyectoICP_backend/main.mo",
+      "type": "motoko"
+    },
+    "ProyectoICP_frontend": {
+      "dependencies": [
+        "ProyectoICP_backend"
+      ],
+      "source": [
+        "src/ProyectoICP_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ProyectoICP_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
